@@ -4,6 +4,7 @@ export default async (dispatch, someProp) => {
   dispatch({ type: 'change-another-prop-loading' })
 
   try {
+    // do some async work
     await sleep(1000)
     dispatch({ type: 'change-another-prop-success', key: 'someKey', value: someProp })
 
