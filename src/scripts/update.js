@@ -14,7 +14,7 @@
     ==> { type, key, value }
 
   'change-another-prop-error'
-    ==> { type, errorMessage }
+    ==> { type, error }
 
 **/
 
