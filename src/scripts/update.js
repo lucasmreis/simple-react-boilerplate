@@ -49,31 +49,3 @@ export default function (action, state) {
     return state
   }
 }
-
-// export default function (action, state) {
-//   const { someProp, anotherProp, loading, warnings, errors } = state
-//
-//   switch (action.type) {
-//     case 'change-some-prop':
-//       return { ...state, someProp: action.value }
-//
-//     case 'change-another-prop-loading':
-//       return { ...state, loading: [ 'anotherProp', ...loading ] }
-//
-//     case 'change-another-prop-success':
-//       const newAnotherProp = { ...anotherProp, [action.key]: action.value }
-//       return {
-//         ...state,
-//         anotherProp: newAnotherProp,
-//         loading: loading.filter(l => l !== 'anotherProp')
-//       }
-//
-//     case 'change-another-prop-error':
-//       const err = { entity: 'anotherProp', message: action.errorMessage }
-//       const newErrors = [ err, ...errors ]
-//       return { ...state, errors: newErrors, loading: loading.filter(l => l !== 'anotherProp') }
-//
-//     default:
-//       return state
-//   }
-// }
